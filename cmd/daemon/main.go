@@ -468,14 +468,17 @@ func loadConfig(cfg *Config) error {
 	}
 
 	// Lock the config directory (to ensure multiple instances won't clobber
-	// each others state).
-	lockFilePath := filepath.Join(cfg.ConfigDir, "lockfile")
-	cfg.configLock = flock.New(lockFilePath)
-	if locked, err := cfg.configLock.TryLock(); err != nil {
-		return fmt.Errorf("could not lock config directory: %w", err)
-	} else if !locked {
-		// Lock already taken! Looks like go-librespot is already running.
-		return fmt.Errorf("%w (lockfile: %s)", errAlreadyRunning, lockFilePath)
+	// each others state). Skip locking if config overrides are provided,
+	// allowing multiple instances with different configurations.
+	if len(configOverrides) == 0 {
+		lockFilePath := filepath.Join(cfg.ConfigDir, "lockfile")
+		cfg.configLock = flock.New(lockFilePath)
+		if locked, err := cfg.configLock.TryLock(); err != nil {
+			return fmt.Errorf("could not lock config directory: %w", err)
+		} else if !locked {
+			// Lock already taken! Looks like go-librespot is already running.
+			return fmt.Errorf("%w (lockfile: %s)", errAlreadyRunning, lockFilePath)
+		}
 	}
 
 	k := koanf.New(".")
