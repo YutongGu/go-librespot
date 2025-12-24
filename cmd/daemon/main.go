@@ -89,6 +89,14 @@ func NewApp(cfg *Config) (app *App, err error) {
 	if cfg.DeviceId != "" {
 		// Use configured device ID.
 		app.deviceId = cfg.DeviceId
+	} else if cfg.EphemeralMode {
+		// In ephemeral mode, always generate a new device ID to avoid conflicts
+		// with other instances. This ensures each instance is a unique Spotify
+		// Connect device.
+		deviceIdBytes := make([]byte, 20)
+		_, _ = rand.Read(deviceIdBytes)
+		app.deviceId = hex.EncodeToString(deviceIdBytes)
+		log.Infof("ephemeral mode: generated new device id: %s", app.deviceId)
 	} else if app.state.DeviceId != "" {
 		// Use device ID generated in a previous run.
 		app.deviceId = app.state.DeviceId
@@ -219,15 +227,17 @@ func (app *App) withCredentials(ctx context.Context, creds any) (err error) {
 			}
 
 			// store credentials outside this context in case we get called again
-			app.state.Credentials.Username = appPlayer.sess.Username()
-			app.state.Credentials.Data = appPlayer.sess.StoredCredentials()
+			if !app.cfg.EphemeralMode {
+				app.state.Credentials.Username = appPlayer.sess.Username()
+				app.state.Credentials.Data = appPlayer.sess.StoredCredentials()
 
-			if err = app.state.Write(); err != nil {
-				return nil, err
+				if err = app.state.Write(); err != nil {
+					return nil, err
+				}
+
+				app.log.WithField("username", librespot.ObfuscateUsername(appPlayer.sess.Username())).
+					Debugf("stored credentials")
 			}
-
-			app.log.WithField("username", librespot.ObfuscateUsername(appPlayer.sess.Username())).
-				Debugf("stored credentials")
 			return appPlayer, nil
 		}
 	})
@@ -362,7 +372,7 @@ func (app *App) withAppPlayer(ctx context.Context, appPlayerFunc func(context.Co
 		apiCh = make(chan ApiRequest)
 		currentPlayer = newAppPlayer
 
-		if app.cfg.Credentials.Zeroconf.PersistCredentials {
+		if app.cfg.Credentials.Zeroconf.PersistCredentials && !app.cfg.EphemeralMode {
 			app.state.Credentials.Username = newAppPlayer.sess.Username()
 			app.state.Credentials.Data = newAppPlayer.sess.StoredCredentials()
 
@@ -385,6 +395,11 @@ type Config struct {
 	// We need to keep this object around, otherwise it gets GC'd and the
 	// finalizer will run, probably closing the lock.
 	configLock *flock.Flock
+
+	// EphemeralMode is set when config overrides are used (-c/--conf flags).
+	// In this mode, state is not persisted and a unique device ID is generated
+	// if not explicitly provided, allowing multiple instances to run safely.
+	EphemeralMode bool
 
 	LogLevel                      log.Level `koanf:"log_level"`
 	LogDisableTimestamp           bool      `koanf:"log_disable_timestamp"`
@@ -543,6 +558,9 @@ func loadConfig(cfg *Config) error {
 		if err := k.Load(confmap.Provider(overrideMap, "."), nil); err != nil {
 			return fmt.Errorf("failed loading config overrides: %w", err)
 		}
+
+		// Enable ephemeral mode when config overrides are used
+		cfg.EphemeralMode = true
 	}
 
 	// unmarshal configuration

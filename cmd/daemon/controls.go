@@ -710,10 +710,12 @@ func (p *AppPlayer) updateVolume(newVal uint32) {
 	p.app.log.Debugf("update volume requested to %d/%d", newVal, player.MaxStateVolume)
 	p.player.SetVolume(newVal)
 
-	// Save the volume to the state
-	p.app.state.LastVolume = &newVal
-	if err := p.app.state.Write(); err != nil {
-		p.app.log.WithError(err).Error("failed writing state after volume change")
+	// Save the volume to the state (skip in ephemeral mode)
+	if !p.app.cfg.EphemeralMode {
+		p.app.state.LastVolume = &newVal
+		if err := p.app.state.Write(); err != nil {
+			p.app.log.WithError(err).Error("failed writing state after volume change")
+		}
 	}
 
 	// If there is a value in the channel buffer, remove it.
