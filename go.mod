@@ -1,8 +1,8 @@
 module github.com/devgianlu/go-librespot
 
-go 1.25
+go 1.22.5
 
-toolchain go1.25.5
+toolchain go1.22.5
 
 require (
 	github.com/cenkalti/backoff/v4 v4.3.0
