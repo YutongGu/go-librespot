@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
+	librespot "github.com/YutongGu/go-librespot"
 	"github.com/cenkalti/backoff/v4"
-	librespot "github.com/devgianlu/go-librespot"
 	"nhooyr.io/websocket"
 )
 

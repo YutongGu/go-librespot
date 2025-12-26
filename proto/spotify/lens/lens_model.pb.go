@@ -7,11 +7,12 @@
 package lens
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -131,7 +132,7 @@ const file_spotify_lens_lens_model_proto_rawDesc = "" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x1a\n" +
 	"\brevision\x18\x02 \x01(\fR\brevisionB\xc8\x01\n" +
-	"\x16com.spotify.lens.modelB\x0eLensModelProtoP\x01Z4github.com/devgianlu/go-librespot/proto/spotify/lens\xa2\x02\x03SLM\xaa\x02\x12Spotify.Lens.Model\xca\x02\x12Spotify\\Lens\\Model\xe2\x02\x1eSpotify\\Lens\\Model\\GPBMetadata\xea\x02\x14Spotify::Lens::Modelb\x06proto3"
+	"\x16com.spotify.lens.modelB\x0eLensModelProtoP\x01Z4github.com/YutongGu/go-librespot/proto/spotify/lens\xa2\x02\x03SLM\xaa\x02\x12Spotify.Lens.Model\xca\x02\x12Spotify\\Lens\\Model\xe2\x02\x1eSpotify\\Lens\\Model\\GPBMetadata\xea\x02\x14Spotify::Lens::Modelb\x06proto3"
 
 var (
 	file_spotify_lens_lens_model_proto_rawDescOnce sync.Once

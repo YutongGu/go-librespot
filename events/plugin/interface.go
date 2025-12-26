@@ -1,10 +1,10 @@
 package plugin
 
 import (
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/mercury"
-	"github.com/devgianlu/go-librespot/player"
-	"github.com/devgianlu/go-librespot/spclient"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/mercury"
+	"github.com/YutongGu/go-librespot/player"
+	"github.com/YutongGu/go-librespot/spclient"
 )
 
 type Interface interface {

@@ -7,13 +7,14 @@
 package connectstate
 
 import (
-	media "github.com/devgianlu/go-librespot/proto/spotify/common/media"
-	devices "github.com/devgianlu/go-librespot/proto/spotify/connectstate/devices"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	media "github.com/YutongGu/go-librespot/proto/spotify/common/media"
+	devices "github.com/YutongGu/go-librespot/proto/spotify/connectstate/devices"
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -2410,7 +2411,7 @@ const file_spotify_connectstate_connect_proto_rawDesc = "" +
 	"\x15DEVICE_VOLUME_CHANGED\x10\x04\x12\x18\n" +
 	"\x14DEVICE_ALIAS_CHANGED\x10\x05\x12\x19\n" +
 	"\x15DEVICE_NEW_CONNECTION\x10\x06B\xd7\x01\n" +
-	"\x18com.spotify.connectstateB\fConnectProtoP\x01Z<github.com/devgianlu/go-librespot/proto/spotify/connectstate\xa2\x02\x03SCX\xaa\x02\x14Spotify.Connectstate\xca\x02\x14Spotify\\Connectstate\xe2\x02 Spotify\\Connectstate\\GPBMetadata\xea\x02\x15Spotify::Connectstateb\x06proto3"
+	"\x18com.spotify.connectstateB\fConnectProtoP\x01Z<github.com/YutongGu/go-librespot/proto/spotify/connectstate\xa2\x02\x03SCX\xaa\x02\x14Spotify.Connectstate\xca\x02\x14Spotify\\Connectstate\xe2\x02 Spotify\\Connectstate\\GPBMetadata\xea\x02\x15Spotify::Connectstateb\x06proto3"
 
 var (
 	file_spotify_connectstate_connect_proto_rawDescOnce sync.Once

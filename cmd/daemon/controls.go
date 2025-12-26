@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/mpris"
-	"github.com/devgianlu/go-librespot/player"
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
-	playerpb "github.com/devgianlu/go-librespot/proto/spotify/player"
-	"github.com/devgianlu/go-librespot/tracks"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/mpris"
+	"github.com/YutongGu/go-librespot/player"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
+	playerpb "github.com/YutongGu/go-librespot/proto/spotify/player"
+	"github.com/YutongGu/go-librespot/tracks"
 	"google.golang.org/protobuf/proto"
 )
 

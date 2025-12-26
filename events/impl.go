@@ -1,8 +1,8 @@
 package events
 
 import (
-	"github.com/devgianlu/go-librespot/events/impl"
-	"github.com/devgianlu/go-librespot/events/plugin"
+	"github.com/YutongGu/go-librespot/events/impl"
+	"github.com/YutongGu/go-librespot/events/plugin"
 )
 
 var Plugin plugin.Interface = impl.Impl{}

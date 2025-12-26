@@ -4,11 +4,12 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	librespot "github.com/devgianlu/go-librespot"
 	"io"
 	"math"
 	"os"
 	"sync"
+
+	librespot "github.com/YutongGu/go-librespot"
 )
 
 type pipeOutput struct {

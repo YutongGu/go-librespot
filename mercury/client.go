@@ -5,12 +5,13 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/ap"
-	spotifypb "github.com/devgianlu/go-librespot/proto/spotify"
-	"google.golang.org/protobuf/proto"
 	"sync"
 	"time"
+
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/ap"
+	spotifypb "github.com/YutongGu/go-librespot/proto/spotify"
+	"google.golang.org/protobuf/proto"
 )
 
 type hermesRequest struct {

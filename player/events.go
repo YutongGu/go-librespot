@@ -1,10 +1,10 @@
 package player
 
 import (
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/audio"
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
-	"github.com/devgianlu/go-librespot/proto/spotify/metadata"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/audio"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
+	"github.com/YutongGu/go-librespot/proto/spotify/metadata"
 )
 
 type EventType int

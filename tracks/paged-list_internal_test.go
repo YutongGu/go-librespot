@@ -8,7 +8,7 @@ import (
 	"io"
 	"testing"
 
-	librespot "github.com/devgianlu/go-librespot"
+	librespot "github.com/YutongGu/go-librespot"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"

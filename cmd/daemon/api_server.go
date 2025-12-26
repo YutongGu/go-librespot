@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
-	metadatapb "github.com/devgianlu/go-librespot/proto/spotify/metadata"
+	librespot "github.com/YutongGu/go-librespot"
+	metadatapb "github.com/YutongGu/go-librespot/proto/spotify/metadata"
 	"github.com/rs/cors"
 	"nhooyr.io/websocket"
 	"nhooyr.io/websocket/wsjson"

@@ -3,9 +3,10 @@ package session
 import (
 	"context"
 	"fmt"
-	librespot "github.com/devgianlu/go-librespot"
 	"net"
 	"net/http"
+
+	librespot "github.com/YutongGu/go-librespot"
 )
 
 func NewOAuth2Server(ctx context.Context, log librespot.Logger, callbackPort int) (int, chan string, error) {

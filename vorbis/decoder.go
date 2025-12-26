@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	librespot "github.com/devgianlu/go-librespot"
+	librespot "github.com/YutongGu/go-librespot"
 	"github.com/xlab/vorbis-go/vorbis"
 )
 

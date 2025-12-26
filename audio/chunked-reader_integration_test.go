@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/audio"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/audio"
 	"github.com/stretchr/testify/suite"
 	"go.uber.org/goleak"
 )

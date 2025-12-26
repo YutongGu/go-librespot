@@ -7,11 +7,12 @@
 package identifiers
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -90,7 +91,7 @@ const file_spotify_login5_v3_identifiers_login5_identifiers_proto_rawDesc = "" +
 	"\x06number\x18\x01 \x01(\tR\x06number\x12(\n" +
 	"\x10iso_country_code\x18\x02 \x01(\tR\x0eisoCountryCode\x120\n" +
 	"\x14country_calling_code\x18\x03 \x01(\tR\x12countryCallingCodeB\x9a\x02\n" +
-	"!com.spotify.login5.v3.identifiersB\x16Login5IdentifiersProtoP\x01ZEgithub.com/devgianlu/go-librespot/proto/spotify/login5/v3/identifiers\xa2\x02\x04SLVI\xaa\x02\x1dSpotify.Login5.V3.Identifiers\xca\x02\x1dSpotify\\Login5\\V3\\Identifiers\xe2\x02)Spotify\\Login5\\V3\\Identifiers\\GPBMetadata\xea\x02 Spotify::Login5::V3::Identifiersb\x06proto3"
+	"!com.spotify.login5.v3.identifiersB\x16Login5IdentifiersProtoP\x01ZEgithub.com/YutongGu/go-librespot/proto/spotify/login5/v3/identifiers\xa2\x02\x04SLVI\xaa\x02\x1dSpotify.Login5.V3.Identifiers\xca\x02\x1dSpotify\\Login5\\V3\\Identifiers\xe2\x02)Spotify\\Login5\\V3\\Identifiers\\GPBMetadata\xea\x02 Spotify::Login5::V3::Identifiersb\x06proto3"
 
 var (
 	file_spotify_login5_v3_identifiers_login5_identifiers_proto_rawDescOnce sync.Once

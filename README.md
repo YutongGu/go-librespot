@@ -1,9 +1,9 @@
 # go-librespot
 
-[![GitHub release](https://img.shields.io/github/release/devgianlu/go-librespot.svg)](https://github.com/devgianlu/go-librespot/releases/latest)
-![GitHub branch check runs](https://img.shields.io/github/check-runs/devgianlu/go-librespot/master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/devgianlu/go-librespot)](https://goreportcard.com/report/github.com/devgianlu/go-librespot)
-[![GitHub License](https://img.shields.io/github/license/devgianlu/go-librespot)](https://github.com/devgianlu/go-librespot/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/YutongGu/go-librespot.svg)](https://github.com/YutongGu/go-librespot/releases/latest)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/YutongGu/go-librespot/master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/YutongGu/go-librespot)](https://goreportcard.com/report/github.com/YutongGu/go-librespot)
+[![GitHub License](https://img.shields.io/github/license/YutongGu/go-librespot)](https://github.com/YutongGu/go-librespot/blob/master/LICENSE)
 
 Yet another open-source Spotify Connect compatible client, written in Go.
 
@@ -14,15 +14,15 @@ Yet another open-source Spotify Connect compatible client, written in Go.
 ### Using prebuilt binary
 
 To get started you can download prebuilt binaries for
-the [latest release](https://github.com/devgianlu/go-librespot/releases/latest).
+the [latest release](https://github.com/YutongGu/go-librespot/releases/latest).
 
 Development prebuilt binaries are also available
-as [GitHub Actions artifacts](https://github.com/devgianlu/go-librespot/blob/249b8fee709e2d08fe9c39a16ad0fc4b737cb967/.github/workflows/release.yml#L62).
+as [GitHub Actions artifacts](https://github.com/YutongGu/go-librespot/blob/249b8fee709e2d08fe9c39a16ad0fc4b737cb967/.github/workflows/release.yml#L62).
 
 ### Using Docker
 
 A lightweight Docker image for go-librespot is available
-on the [GitHub Container Registry](https://github.com/devgianlu/go-librespot/pkgs/container/go-librespot).
+on the [GitHub Container Registry](https://github.com/YutongGu/go-librespot/pkgs/container/go-librespot).
 
 An example Docker Compose configuration for PulseAudio is available [here](/docker-compose.pulse.yml).
 

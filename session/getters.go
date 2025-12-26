@@ -2,15 +2,16 @@ package session
 
 import (
 	"context"
-	"github.com/devgianlu/go-librespot/mercury"
-	"github.com/devgianlu/go-librespot/player"
 	"net/http"
 	"net/url"
 
-	"github.com/devgianlu/go-librespot/ap"
-	"github.com/devgianlu/go-librespot/audio"
-	"github.com/devgianlu/go-librespot/dealer"
-	"github.com/devgianlu/go-librespot/spclient"
+	"github.com/YutongGu/go-librespot/mercury"
+	"github.com/YutongGu/go-librespot/player"
+
+	"github.com/YutongGu/go-librespot/ap"
+	"github.com/YutongGu/go-librespot/audio"
+	"github.com/YutongGu/go-librespot/dealer"
+	"github.com/YutongGu/go-librespot/spclient"
 )
 
 func (s *Session) Username() string {

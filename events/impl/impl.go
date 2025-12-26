@@ -1,13 +1,13 @@
 package impl
 
 import (
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/audio"
-	"github.com/devgianlu/go-librespot/mercury"
-	"github.com/devgianlu/go-librespot/player"
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
-	metadatapb "github.com/devgianlu/go-librespot/proto/spotify/metadata"
-	"github.com/devgianlu/go-librespot/spclient"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/audio"
+	"github.com/YutongGu/go-librespot/mercury"
+	"github.com/YutongGu/go-librespot/player"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
+	metadatapb "github.com/YutongGu/go-librespot/proto/spotify/metadata"
+	"github.com/YutongGu/go-librespot/spclient"
 )
 
 type Impl struct {

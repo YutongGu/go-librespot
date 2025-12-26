@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"strings"
 
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
 )
 
 type messageReceiver struct {

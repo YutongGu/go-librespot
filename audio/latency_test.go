@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/devgianlu/go-librespot/audio"
+	"github.com/YutongGu/go-librespot/audio"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

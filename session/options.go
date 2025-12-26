@@ -1,10 +1,11 @@
 package session
 
 import (
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/apresolve"
-	devicespb "github.com/devgianlu/go-librespot/proto/spotify/connectstate/devices"
 	"net/http"
+
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/apresolve"
+	devicespb "github.com/YutongGu/go-librespot/proto/spotify/connectstate/devices"
 )
 
 type Options struct {

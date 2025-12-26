@@ -13,9 +13,9 @@ import (
 	"net/http"
 	"sync"
 
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/dh"
-	devicespb "github.com/devgianlu/go-librespot/proto/spotify/connectstate/devices"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/dh"
+	devicespb "github.com/YutongGu/go-librespot/proto/spotify/connectstate/devices"
 )
 
 type Zeroconf struct {

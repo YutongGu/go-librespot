@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/url"
 
-	librespot "github.com/devgianlu/go-librespot"
-	pbdata "github.com/devgianlu/go-librespot/proto/spotify/clienttoken/data/v0"
-	pbhttp "github.com/devgianlu/go-librespot/proto/spotify/clienttoken/http/v0"
+	librespot "github.com/YutongGu/go-librespot"
+	pbdata "github.com/YutongGu/go-librespot/proto/spotify/clienttoken/data/v0"
+	pbhttp "github.com/YutongGu/go-librespot/proto/spotify/clienttoken/http/v0"
 	"google.golang.org/protobuf/proto"
 )
 

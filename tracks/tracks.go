@@ -6,9 +6,9 @@ import (
 	"slices"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
-	"github.com/devgianlu/go-librespot/spclient"
+	librespot "github.com/YutongGu/go-librespot"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
+	"github.com/YutongGu/go-librespot/spclient"
 	"golang.org/x/exp/rand"
 )
 

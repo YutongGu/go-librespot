@@ -1,7 +1,7 @@
 package main
 
 import (
-	librespot "github.com/devgianlu/go-librespot"
+	librespot "github.com/YutongGu/go-librespot"
 	"github.com/sirupsen/logrus"
 )
 

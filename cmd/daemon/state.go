@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
-	"github.com/devgianlu/go-librespot/dealer"
-	"github.com/devgianlu/go-librespot/player"
-	connectpb "github.com/devgianlu/go-librespot/proto/spotify/connectstate"
-	"github.com/devgianlu/go-librespot/tracks"
+	librespot "github.com/YutongGu/go-librespot"
+	"github.com/YutongGu/go-librespot/dealer"
+	"github.com/YutongGu/go-librespot/player"
+	connectpb "github.com/YutongGu/go-librespot/proto/spotify/connectstate"
+	"github.com/YutongGu/go-librespot/tracks"
 )
 
 type State struct {

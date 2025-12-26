@@ -7,11 +7,12 @@
 package extendedmetadata
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -538,7 +539,7 @@ const file_spotify_extendedmetadata_extended_metadata_proto_rawDesc = "" +
 	"\aUNKNOWN\x10\x00\x12\v\n" +
 	"\aGENERIC\x10\x01\x12\t\n" +
 	"\x05ASSOC\x10\x02B\xf8\x01\n" +
-	"\x1ccom.spotify.extendedmetadataB\x15ExtendedMetadataProtoP\x01Z@github.com/devgianlu/go-librespot/proto/spotify/extendedmetadata\xa2\x02\x03SEX\xaa\x02\x18Spotify.Extendedmetadata\xca\x02\x18Spotify\\Extendedmetadata\xe2\x02$Spotify\\Extendedmetadata\\GPBMetadata\xea\x02\x19Spotify::Extendedmetadatab\x06proto3"
+	"\x1ccom.spotify.extendedmetadataB\x15ExtendedMetadataProtoP\x01Z@github.com/YutongGu/go-librespot/proto/spotify/extendedmetadata\xa2\x02\x03SEX\xaa\x02\x18Spotify.Extendedmetadata\xca\x02\x18Spotify\\Extendedmetadata\xe2\x02$Spotify\\Extendedmetadata\\GPBMetadata\xea\x02\x19Spotify::Extendedmetadatab\x06proto3"
 
 var (
 	file_spotify_extendedmetadata_extended_metadata_proto_rawDescOnce sync.Once

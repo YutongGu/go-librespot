@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	librespot "github.com/devgianlu/go-librespot"
+	librespot "github.com/YutongGu/go-librespot"
 	"golang.org/x/exp/slices"
 )
 

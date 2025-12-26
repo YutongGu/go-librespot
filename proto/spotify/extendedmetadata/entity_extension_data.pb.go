@@ -7,12 +7,13 @@
 package extendedmetadata
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	anypb "google.golang.org/protobuf/types/known/anypb"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	anypb "google.golang.org/protobuf/types/known/anypb"
 )
 
 const (
@@ -315,7 +316,7 @@ const file_spotify_extendedmetadata_entity_extension_data_proto_rawDesc = "" +
 	"\x06header\x18\x01 \x01(\v2%.spotify.extendedmetadata.AssocHeaderR\x06header\x12G\n" +
 	"\n" +
 	"plain_list\x18\x02 \x01(\v2(.spotify.extendedmetadata.PlainListAssocR\tplainListB\xfb\x01\n" +
-	"\x1ccom.spotify.extendedmetadataB\x18EntityExtensionDataProtoP\x01Z@github.com/devgianlu/go-librespot/proto/spotify/extendedmetadata\xa2\x02\x03SEX\xaa\x02\x18Spotify.Extendedmetadata\xca\x02\x18Spotify\\Extendedmetadata\xe2\x02$Spotify\\Extendedmetadata\\GPBMetadata\xea\x02\x19Spotify::Extendedmetadatab\x06proto3"
+	"\x1ccom.spotify.extendedmetadataB\x18EntityExtensionDataProtoP\x01Z@github.com/YutongGu/go-librespot/proto/spotify/extendedmetadata\xa2\x02\x03SEX\xaa\x02\x18Spotify.Extendedmetadata\xca\x02\x18Spotify\\Extendedmetadata\xe2\x02$Spotify\\Extendedmetadata\\GPBMetadata\xea\x02\x19Spotify::Extendedmetadatab\x06proto3"
 
 var (
 	file_spotify_extendedmetadata_entity_extension_data_proto_rawDescOnce sync.Once

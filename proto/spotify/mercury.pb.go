@@ -7,11 +7,12 @@
 package spotify
 
 import (
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -494,7 +495,7 @@ const file_spotify_mercury_proto_rawDesc = "" +
 	"\x10MercuryUserField\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\fR\x05valueB\x88\x01\n" +
-	"\vcom.spotifyB\fMercuryProtoP\x01Z/github.com/devgianlu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
+	"\vcom.spotifyB\fMercuryProtoP\x01Z/github.com/YutongGu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
 
 var (
 	file_spotify_mercury_proto_rawDescOnce sync.Once
