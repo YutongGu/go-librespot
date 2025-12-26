@@ -7,12 +7,11 @@
 package spotify
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -1616,8 +1615,8 @@ const file_spotify_authentication_proto_rawDesc = "" +
 	"\x06OS_BCO\x10\x16*(\n" +
 	"\vAccountType\x12\v\n" +
 	"\aSpotify\x10\x00\x12\f\n" +
-	"\bFacebook\x10\x01B\x8f\x01\n" +
-	"\vcom.spotifyB\x13AuthenticationProtoP\x01Z/github.com/YutongGu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
+	"\bFacebook\x10\x01B\x8e\x01\n" +
+	"\vcom.spotifyB\x13AuthenticationProtoP\x01Z.github.com/YutongGu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
 
 var (
 	file_spotify_authentication_proto_rawDescOnce sync.Once

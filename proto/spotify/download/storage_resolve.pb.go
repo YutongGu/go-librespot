@@ -7,12 +7,11 @@
 package download
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -144,8 +143,8 @@ const file_spotify_download_storage_resolve_proto_rawDesc = "" +
 	"\x03CDN\x10\x00\x12\v\n" +
 	"\aSTORAGE\x10\x01\x12\x0e\n" +
 	"\n" +
-	"RESTRICTED\x10\x03B\xc6\x01\n" +
-	"\x14com.spotify.downloadB\x13StorageResolveProtoP\x01Z8github.com/YutongGu/go-librespot/proto/spotify/download\xa2\x02\x03SDX\xaa\x02\x10Spotify.Download\xca\x02\x10Spotify\\Download\xe2\x02\x1cSpotify\\Download\\GPBMetadata\xea\x02\x11Spotify::Downloadb\x06proto3"
+	"RESTRICTED\x10\x03B\xc5\x01\n" +
+	"\x14com.spotify.downloadB\x13StorageResolveProtoP\x01Z7github.com/YutongGu/go-librespot/proto/spotify/download\xa2\x02\x03SDX\xaa\x02\x10Spotify.Download\xca\x02\x10Spotify\\Download\xe2\x02\x1cSpotify\\Download\\GPBMetadata\xea\x02\x11Spotify::Downloadb\x06proto3"
 
 var (
 	file_spotify_download_storage_resolve_proto_rawDescOnce sync.Once

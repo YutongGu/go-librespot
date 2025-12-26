@@ -7,12 +7,11 @@
 package playlist_permission
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -1695,8 +1694,8 @@ const file_spotify_playlist_permission_playlist_permission_proto_rawDesc = "" +
 	"\x1fPERMISSION_IDENTIFIER_KIND_BASE\x10\x01\x12%\n" +
 	"!PERMISSION_IDENTIFIER_KIND_MEMBER\x10\x02\x12$\n" +
 	" PERMISSION_IDENTIFIER_KIND_ABUSE\x10\x03\x12&\n" +
-	"\"PERMISSION_IDENTIFIER_KIND_PROFILE\x10\x04B\x88\x02\n" +
-	"\x1fcom.spotify.playlist_permissionB\x17PlaylistPermissionProtoP\x01ZCgithub.com/YutongGu/go-librespot/proto/spotify/playlist_permission\xa2\x02\x03SPX\xaa\x02\x1aSpotify.PlaylistPermission\xca\x02\x1aSpotify\\PlaylistPermission\xe2\x02&Spotify\\PlaylistPermission\\GPBMetadata\xea\x02\x1bSpotify::PlaylistPermission"
+	"\"PERMISSION_IDENTIFIER_KIND_PROFILE\x10\x04B\x87\x02\n" +
+	"\x1fcom.spotify.playlist_permissionB\x17PlaylistPermissionProtoP\x01ZBgithub.com/YutongGu/go-librespot/proto/spotify/playlist_permission\xa2\x02\x03SPX\xaa\x02\x1aSpotify.PlaylistPermission\xca\x02\x1aSpotify\\PlaylistPermission\xe2\x02&Spotify\\PlaylistPermission\\GPBMetadata\xea\x02\x1bSpotify::PlaylistPermission"
 
 var (
 	file_spotify_playlist_permission_playlist_permission_proto_rawDescOnce sync.Once

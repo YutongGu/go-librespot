@@ -7,12 +7,11 @@
 package streaming
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -293,8 +292,8 @@ const file_spotify_streaming_playplay_proto_rawDesc = "" +
 	"\x14UNKNOWN_CONTENT_TYPE\x10\x00\x12\x0f\n" +
 	"\vAUDIO_TRACK\x10\x01\x12\x11\n" +
 	"\rAUDIO_EPISODE\x10\x02\x12\f\n" +
-	"\bAUDIO_AD\x10\x03B\xb7\x01\n" +
-	"\x12com.spotify.streamB\rPlayplayProtoP\x01Z9github.com/YutongGu/go-librespot/proto/spotify/streaming\xa2\x02\x03SSX\xaa\x02\x0eSpotify.Stream\xca\x02\x0eSpotify\\Stream\xe2\x02\x1aSpotify\\Stream\\GPBMetadata\xea\x02\x0fSpotify::Stream"
+	"\bAUDIO_AD\x10\x03B\xb6\x01\n" +
+	"\x12com.spotify.streamB\rPlayplayProtoP\x01Z8github.com/YutongGu/go-librespot/proto/spotify/streaming\xa2\x02\x03SSX\xaa\x02\x0eSpotify.Stream\xca\x02\x0eSpotify\\Stream\xe2\x02\x1aSpotify\\Stream\\GPBMetadata\xea\x02\x0fSpotify::Stream"
 
 var (
 	file_spotify_streaming_playplay_proto_rawDescOnce sync.Once

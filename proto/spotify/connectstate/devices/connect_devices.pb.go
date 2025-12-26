@@ -7,12 +7,11 @@
 package devices
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -640,8 +639,8 @@ const file_spotify_connectstate_devices_connect_devices_proto_rawDesc = "" +
 	"\tCAR_THING\x10e\x12\f\n" +
 	"\bOBSERVER\x10f\x12\x0e\n" +
 	"\n" +
-	"HOME_THING\x10gB\x8f\x02\n" +
-	" com.spotify.connectstate.devicesB\x13ConnectDevicesProtoP\x01ZDgithub.com/YutongGu/go-librespot/proto/spotify/connectstate/devices\xa2\x02\x03SCD\xaa\x02\x1cSpotify.Connectstate.Devices\xca\x02\x1cSpotify\\Connectstate\\Devices\xe2\x02(Spotify\\Connectstate\\Devices\\GPBMetadata\xea\x02\x1eSpotify::Connectstate::Devicesb\x06proto3"
+	"HOME_THING\x10gB\x8e\x02\n" +
+	" com.spotify.connectstate.devicesB\x13ConnectDevicesProtoP\x01ZCgithub.com/YutongGu/go-librespot/proto/spotify/connectstate/devices\xa2\x02\x03SCD\xaa\x02\x1cSpotify.Connectstate.Devices\xca\x02\x1cSpotify\\Connectstate\\Devices\xe2\x02(Spotify\\Connectstate\\Devices\\GPBMetadata\xea\x02\x1eSpotify::Connectstate::Devicesb\x06proto3"
 
 var (
 	file_spotify_connectstate_devices_connect_devices_proto_rawDescOnce sync.Once

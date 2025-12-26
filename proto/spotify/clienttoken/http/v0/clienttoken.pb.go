@@ -7,13 +7,12 @@
 package v0
 
 import (
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
-
 	v0 "github.com/YutongGu/go-librespot/proto/spotify/clienttoken/data/v0"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
 )
 
 const (
@@ -1268,8 +1267,8 @@ const file_spotify_clienttoken_http_v0_clienttoken_proto_rawDesc = "" +
 	"\x11CHALLENGE_UNKNOWN\x10\x00\x12 \n" +
 	"\x1cCHALLENGE_CLIENT_SECRET_HMAC\x10\x01\x12\x19\n" +
 	"\x15CHALLENGE_EVALUATE_JS\x10\x02\x12\x17\n" +
-	"\x13CHALLENGE_HASH_CASH\x10\x03B\x88\x02\n" +
-	"\x1fcom.spotify.clienttoken.http.v0B\x10ClienttokenProtoP\x01ZCgithub.com/YutongGu/go-librespot/proto/spotify/clienttoken/http/v0\xa2\x02\x04SCHV\xaa\x02\x1bSpotify.Clienttoken.Http.V0\xca\x02\x1bSpotify\\Clienttoken\\Http\\V0\xe2\x02'Spotify\\Clienttoken\\Http\\V0\\GPBMetadata\xea\x02\x1eSpotify::Clienttoken::Http::V0b\x06proto3"
+	"\x13CHALLENGE_HASH_CASH\x10\x03B\x87\x02\n" +
+	"\x1fcom.spotify.clienttoken.http.v0B\x10ClienttokenProtoP\x01ZBgithub.com/YutongGu/go-librespot/proto/spotify/clienttoken/http/v0\xa2\x02\x04SCHV\xaa\x02\x1bSpotify.Clienttoken.Http.V0\xca\x02\x1bSpotify\\Clienttoken\\Http\\V0\xe2\x02'Spotify\\Clienttoken\\Http\\V0\\GPBMetadata\xea\x02\x1eSpotify::Clienttoken::Http::V0b\x06proto3"
 
 var (
 	file_spotify_clienttoken_http_v0_clienttoken_proto_rawDescOnce sync.Once

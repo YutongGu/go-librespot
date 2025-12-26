@@ -7,12 +7,11 @@
 package spotify
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -2191,8 +2190,8 @@ const file_spotify_keyexchange_proto_rawDesc = "" +
 	"\rAccountExists\x10\x0e\x12\x1d\n" +
 	"\x19ExtraVerificationRequired\x10\x0f\x12\x11\n" +
 	"\rInvalidAppKey\x10\x10\x12\x15\n" +
-	"\x11ApplicationBanned\x10\x11B\x8c\x01\n" +
-	"\vcom.spotifyB\x10KeyexchangeProtoP\x01Z/github.com/YutongGu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
+	"\x11ApplicationBanned\x10\x11B\x8b\x01\n" +
+	"\vcom.spotifyB\x10KeyexchangeProtoP\x01Z.github.com/YutongGu/go-librespot/proto/spotify\xa2\x02\x03SXX\xaa\x02\aSpotify\xca\x02\aSpotify\xe2\x02\x13Spotify\\GPBMetadata\xea\x02\aSpotify"
 
 var (
 	file_spotify_keyexchange_proto_rawDescOnce sync.Once

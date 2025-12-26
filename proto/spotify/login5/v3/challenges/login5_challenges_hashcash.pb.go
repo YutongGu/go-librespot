@@ -7,13 +7,12 @@
 package challenges
 
 import (
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
-
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
 )
 
 const (
@@ -137,8 +136,8 @@ const file_spotify_login5_v3_challenges_login5_challenges_hashcash_proto_rawDesc
 	"\x06length\x18\x02 \x01(\x05R\x06length\"a\n" +
 	"\x10HashcashSolution\x12\x16\n" +
 	"\x06suffix\x18\x01 \x01(\fR\x06suffix\x125\n" +
-	"\bduration\x18\x02 \x01(\v2\x19.google.protobuf.DurationR\bdurationB\x9b\x02\n" +
-	" com.spotify.login5.v3.challengesB\x1dLogin5ChallengesHashcashProtoP\x01ZDgithub.com/YutongGu/go-librespot/proto/spotify/login5/v3/challenges\xa2\x02\x04SLVC\xaa\x02\x1cSpotify.Login5.V3.Challenges\xca\x02\x1cSpotify\\Login5\\V3\\Challenges\xe2\x02(Spotify\\Login5\\V3\\Challenges\\GPBMetadata\xea\x02\x1fSpotify::Login5::V3::Challengesb\x06proto3"
+	"\bduration\x18\x02 \x01(\v2\x19.google.protobuf.DurationR\bdurationB\x9a\x02\n" +
+	" com.spotify.login5.v3.challengesB\x1dLogin5ChallengesHashcashProtoP\x01ZCgithub.com/YutongGu/go-librespot/proto/spotify/login5/v3/challenges\xa2\x02\x04SLVC\xaa\x02\x1cSpotify.Login5.V3.Challenges\xca\x02\x1cSpotify\\Login5\\V3\\Challenges\xe2\x02(Spotify\\Login5\\V3\\Challenges\\GPBMetadata\xea\x02\x1fSpotify::Login5::V3::Challengesb\x06proto3"
 
 var (
 	file_spotify_login5_v3_challenges_login5_challenges_hashcash_proto_rawDescOnce sync.Once

@@ -7,15 +7,14 @@
 package playlist4
 
 import (
-	reflect "reflect"
-	sync "sync"
-	unsafe "unsafe"
-
 	lens "github.com/YutongGu/go-librespot/proto/spotify/lens"
 	signal "github.com/YutongGu/go-librespot/proto/spotify/playlist/signal"
 	playlist_permission "github.com/YutongGu/go-librespot/proto/spotify/playlist_permission"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	reflect "reflect"
+	sync "sync"
+	unsafe "unsafe"
 )
 
 const (
@@ -3558,8 +3557,8 @@ const file_spotify_playlist4_playlist4_external_proto_rawDesc = "" +
 	"\"GEOBLOCK_BLOCKING_TYPE_UNSPECIFIED\x10\x00\x12 \n" +
 	"\x1cGEOBLOCK_BLOCKING_TYPE_TITLE\x10\x01\x12&\n" +
 	"\"GEOBLOCK_BLOCKING_TYPE_DESCRIPTION\x10\x02\x12 \n" +
-	"\x1cGEOBLOCK_BLOCKING_TYPE_IMAGE\x10\x03B\xcf\x01\n" +
-	"\x15com.spotify.playlist4B\x16Playlist4ExternalProtoP\x01Z9github.com/YutongGu/go-librespot/proto/spotify/playlist4\xa2\x02\x03SPX\xaa\x02\x11Spotify.Playlist4\xca\x02\x11Spotify\\Playlist4\xe2\x02\x1dSpotify\\Playlist4\\GPBMetadata\xea\x02\x12Spotify::Playlist4"
+	"\x1cGEOBLOCK_BLOCKING_TYPE_IMAGE\x10\x03B\xce\x01\n" +
+	"\x15com.spotify.playlist4B\x16Playlist4ExternalProtoP\x01Z8github.com/YutongGu/go-librespot/proto/spotify/playlist4\xa2\x02\x03SPX\xaa\x02\x11Spotify.Playlist4\xca\x02\x11Spotify\\Playlist4\xe2\x02\x1dSpotify\\Playlist4\\GPBMetadata\xea\x02\x12Spotify::Playlist4"
 
 var (
 	file_spotify_playlist4_playlist4_external_proto_rawDescOnce sync.Once

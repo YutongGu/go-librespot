@@ -7,12 +7,11 @@
 package media
 
 import (
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
-
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -96,9 +95,9 @@ const file_spotify_common_media_media_proto_rawDesc = "" +
 	"\x04HIGH\x10\x03\x12\r\n" +
 	"\tVERY_HIGH\x10\x04\x12\b\n" +
 	"\x04HIFI\x10\x05\x12\v\n" +
-	"\aHIFI_24\x10\x06B\xd6\x01\n" +
+	"\aHIFI_24\x10\x06B\xd5\x01\n" +
 	"\x18com.spotify.common.mediaB\n" +
-	"MediaProtoP\x01Z<github.com/YutongGu/go-librespot/proto/spotify/common/media\xa2\x02\x03SCM\xaa\x02\x14Spotify.Common.Media\xca\x02\x14Spotify\\Common\\Media\xe2\x02 Spotify\\Common\\Media\\GPBMetadata\xea\x02\x16Spotify::Common::Mediab\x06proto3"
+	"MediaProtoP\x01Z;github.com/YutongGu/go-librespot/proto/spotify/common/media\xa2\x02\x03SCM\xaa\x02\x14Spotify.Common.Media\xca\x02\x14Spotify\\Common\\Media\xe2\x02 Spotify\\Common\\Media\\GPBMetadata\xea\x02\x16Spotify::Common::Mediab\x06proto3"
 
 var (
 	file_spotify_common_media_media_proto_rawDescOnce sync.Once
